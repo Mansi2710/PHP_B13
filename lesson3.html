@@ -1,0 +1,89 @@
+<html>
+	<head>
+		<title>
+			INPUT IN HTML @ THE EASYLEARN ACADEMY
+		</title>
+	</head>
+	<body>
+		<h1 align=center>Register with us</h1>
+		<hr width='50%' />
+		<form method="post" action="process.html" enctype="multipart/form-data">
+			<table width=80% border=2 align=center cellpadding=10 cellspacing=5>
+				<tr>
+					<td>Enter fullname *</td>
+					<td>
+						<input type=text name=txtfullname required />
+					</td>
+				</tr>
+				<tr>
+					<td>Enter email *</td>
+					<td>
+						<input type=email name=txtemail required />
+					</td>
+				</tr>
+				<tr>
+					<td>Enter Password * </td>
+					<td>
+						<input type=password name=txtpassword required />
+					</td>
+				</tr>
+				<tr>
+					<td>Enter Date of birth *</td>
+					<td>
+						<input type=date name=txtdob required />
+					</td>
+				</tr>
+				<tr>
+					<td>Enter Mobile * </td>
+					<td>
+						<input type=number name=txtmobile required />
+					</td>
+				</tr>
+				<tr>
+					<td>Select  gender *</td>
+					<td>
+						<input type=radio name=rdogender value=1 required />Male
+						<input type=radio name=rdogender value=0 required />Female
+					</td>
+				</tr>
+				<tr>
+					<td>languange you speak</td>
+					<td>
+						<input type=checkbox name=chkguj  value=1 /> Gujarati
+						<input type=checkbox name=chkhindi  value=2 /> Hindi
+						<input type=checkbox name=chkenglish  value=3 /> English
+					</td>
+				</tr>
+				<tr>
+					<td>Select photo</td>
+					<td>
+						<input type=file name=filphoto accept="image/*" />
+					</td>
+				</tr>
+				<tr>
+					<td>select country</td>
+					<td>
+						<select name=sltcountry required>
+							<option value=1>India</option>
+							<option value=2>Canada</option>
+							<option value=3>Russia</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>Enter address</td>
+					<td>
+						<textarea name=txtaddress rows=5 cols=50></textarea>
+					</td>
+				</tr>
+				<tr>
+					<td colspan=2 align=center bgcolor=gray>
+						<input type=submit name=btnsubmit value=register  />
+						<input type=reset name=btnreset value=clear  />
+						<input type=button name=btnnothing value="I cant do nothing"  />
+					</td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</html>
